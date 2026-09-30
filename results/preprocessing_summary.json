@@ -1,0 +1,53 @@
+{
+  "dataset_file": "IMDB Dataset.csv",
+  "original_rows": 50000,
+  "original_columns": [
+    "review",
+    "sentiment"
+  ],
+  "missing_values_before_cleaning": {
+    "review": 0,
+    "sentiment": 0
+  },
+  "duplicate_rows_removed": 418,
+  "rows_after_duplicate_removal": 49582,
+  "class_distribution_before_duplicate_removal": {
+    "positive": 25000,
+    "negative": 25000
+  },
+  "class_distribution_after_duplicate_removal": {
+    "positive": 24884,
+    "negative": 24698
+  },
+  "label_mapping": {
+    "negative": 0,
+    "positive": 1
+  },
+  "random_seed": 42,
+  "split": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "split_sizes": {
+    "train": 39665,
+    "validation": 4958,
+    "test": 4959
+  },
+  "split_positive_counts": {
+    "train": 19907,
+    "validation": 2488,
+    "test": 2489
+  },
+  "requested_vocabulary_size": 20000,
+  "effective_vocabulary_size": 20000,
+  "full_training_word_index_size": 111558,
+  "maximum_sequence_length": 300,
+  "tokenizer_fit_scope": "training split only",
+  "cleaning_operations": [
+    "decode HTML entities",
+    "remove HTML tags",
+    "convert to lowercase",
+    "collapse repeated whitespace"
+  ]
+}
